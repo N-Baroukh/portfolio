@@ -1,10 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noam Baroukh — Développeur Full‑Stack</title>
+  <meta name="description" content="Portfolio de Noam Baroukh, développeur full‑stack. Compétences, parcours, certifications, projets et contact." />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Noam Baroukh — Développeur Full‑Stack" />
+  <meta property="og:description" content="Portfolio pro : compétences, timeline (Bac Lucien de Hirsch → BTS SIO ORT Montreuil → Bachelor Efrei), projets, certifications, contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Noam Baroukh",
+      "jobTitle":"Développeur Full‑Stack",
+      "url":"https://n-baroukh.github.io/noam.github.io/",
+      "sameAs":["https://github.com/N-Baroukh","https://www.linkedin.com/in/noam-baroukh-b40738300/"],
+      "knowsAbout":["Java","JavaScript","PHP","HTML","CSS","SQL","Git","Symfony","Node.js"],
+      "alumniOf":["Lycée Lucien de Hirsch","ORT Montreuil","Efrei Paris"]
+    }
+  </script>
 </head>
 <body>
-$END$
+<header class="sticky">
+  <div class="container">
+    <nav class="topnav">
+      <div class="brand"><span class="dot" aria-hidden="true"></span><span class="brand-text">Noam Baroukh</span></div>
+      <div class="navlinks" role="navigation" aria-label="Navigation principale">
+        <a class="navlink" href="#skills">Compétences</a>
+        <a class="navlink" href="#timeline">Parcours</a>
+        <a class="navlink" href="#certs">Certifications</a>
+        <a class="navlink" href="#projects">Projets</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+        <a class="btn primary" id="dlCV" href="Fichier/Noam-Baroukh-CV.pdf" target="_blank">Télécharger CV</a>
+      </div>
+      <button class="hamburger" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="section hero reveal" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Salut, moi c’est <span class="gradient-text">Noam Baroukh</span> 👋</h1>
+        <p class="intro">Développeur <strong>full‑stack</strong> orienté <strong>performance</strong> et <strong>expérience utilisateur</strong>. J’aime concevoir des produits fiables et élégants : <em>back‑end</em> solide (Java, Node.js, PHP/Symfony), <em>front‑end</em> soigné (HTML, CSS, JS, Tailwind) et bonnes pratiques (Git, tests, accessibilité).</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <figure class="avatar floaty" aria-label="Avatar">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=600&auto=format&fit=crop" alt="Illustration développeur" loading="lazy" />
+        </figure>
+        <div class="glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="grid cols-2 card">
+        <div class="skill"><strong>Java</strong><div class="bar" aria-label="Java 70%"><i style="--v:70%"></i></div></div>
+        <div class="skill"><strong>JavaScript</strong><div class="bar" aria-label="JavaScript 70%"><i style="--v:70%"></i></div></div>
+        <div class="skill"><strong>PHP</strong><div class="bar" aria-label="PHP 80%"><i style="--v:80%"></i></div></div>
+        <div class="skill"><strong>HTML</strong><div class="bar" aria-label="HTML 90%"><i style="--v:90%"></i></div></div>
+        <div class="skill"><strong>CSS</strong><div class="bar" aria-label="CSS 85%"><i style="--v:85%"></i></div></div>
+        <div class="skill"><strong>SQL</strong><div class="bar" aria-label="SQL 75%"><i style="--v:75%"></i></div></div>
+        <div class="skill"><strong>Git</strong><div class="bar" aria-label="Git 90%"><i style="--v:90%"></i></div></div>
+      </div>
+      <p class="muted stack">Stack : Symfony 6.4, Node.js, REST API, JWT, Docker (DB).</p>
+    </div>
+  </section>
+
+  <!-- TIMELINE FORMATION + STAGES -->
+  <section id="timeline" class="section reveal">
+    <div class="container">
+      <h2>Parcours</h2>
+      <div class="timeline card">
+        <div class="rail" aria-hidden="true"></div>
+
+        <article class="tl-item left">
+          <time>2025 — 2026</time>
+          <h3>Bachelor Développement & Applications — <span class="muted">Efrei</span></h3>
+          <p class="muted">Alternance. Projets full‑stack, performance, sécurité et bonnes pratiques.</p>
+        </article>
+
+        <article class="tl-item right">
+          <time>Mai 2024 - Juillet 2024 — Janvier 2025 - Février 2025</time>
+          <h3>Stage — <span class="muted">Veolia</span></h3>
+          <p class="muted">Développement de CRUD en Python (FastAPI), automatisation de l’enregistrement de fichiers via AWS, initiation à Angular & TypeScript.</p>
+        </article>
+
+        <article class="tl-item left">
+          <time>2023 — 2025</time>
+          <h3>BTS SIO option SLAM — <span class="muted">ORT Montreuil</span></h3>
+          <p class="muted">Dév back/front, PHP/Symfony, Java, BDD, gestion de projet.</p>
+        </article>
+
+        <article class="tl-item right">
+          <time>Jusqu’en 2023</time>
+          <h3>Baccalauréat Général — <span class="muted">Lycée Lucien de Hirsch</span></h3>
+          <p class="muted">Spécialité Mathématique - SES (Sciences Economiques et Sociales) Mention Bien.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="section reveal">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Cisco</h3><p class="muted">Cybersécurité (Introduction/Essentials)</p></div>
+        <div class="card"><h3>SecNumAcadémie (ANSSI)</h3><p class="muted">Bonnes pratiques & sécurité</p></div>
+        <div class="card"><h3>SoloLearn</h3><p class="muted">Web Development</p></div>
+        <div class="card"><h3>OpenClassrooms</h3><p class="muted">Angular - JavaScript - API REST - TypeScript </p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="grid cols-3">
+        <article class="card project hover-rise">
+          <img src="https://images.unsplash.com/photo-1564726341422-7ecb1a8326fc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Capture Veliko" loading="lazy">
+          <div>
+            <h3>Veliko — Plateforme vélo</h3>
+            <p class="muted">Plateforme permettant de gérer et visualiser sur une carte les stations Vélib’ avec un espace client (favoris, compte, reservations) et un espace admin (gestion donnée, statistiques).</p>
+            <div class="tags"><span class="tag">Symfony</span><span class="tag">Java</span><span class="tag">MySQL</span><span class="tag">Docker</span><span class="tag">API</span> </div>
+            <p class="muted tiny">Dépôt privé.</p>
+          </div>
+        </article>
+
+        <article class="card project hover-rise">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Capture SmartTravel" loading="lazy">
+          <div>
+            <h3>SmartTravel — Préparation de voyage <span class="badge">En cours</span></h3>
+            <p class="muted">Météo, fuseau horaire, checklist intelligente, conversion de devises, documents, numéros d’urgence, notifications. Web app Node.js + Tailwind + SQLite/Mongo.</p>
+            <div class="tags"><span class="tag">Node.js</span><span class="tag">API</span><span class="tag">MongoDB</span><span class="tag">OWASP</span></div>
+            <p class="muted tiny">Dépôt privé.</p>
+          </div>
+        </article>
+
+        <article class="card project hover-rise">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="Capture CookWithMe" loading="lazy">          <div>
+            <h3>CookWithMe — Recettes & listes <span class="badge">En cours</span></h3>
+          <p class="muted">
+            CookWithMe est une plateforme collaborative de cuisine où les utilisateurs partagent leurs recettes, découvrent de nouveaux plats, gèrent leurs ingrédients et échangent avec la communauté.
+          </p>
+            <div class="tags"><span class="tag">Symfony</span><span class="tag">Docker</span><span class="tag">MySQL</span></div>
+            <p class="muted tiny">Dépôt privé.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h2>Me contacter</h2>
+      <div class="card socials-only">
+        <div class="socials">
+          <a class="social" href="https://mail.google.com/mail/?view=cm&fs=1&to=noam.baroukh.pro@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+          </a>
+          <a class="social" href="https://github.com/N-Baroukh" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="icon">
+          </a>
+          <a class="social" href="https://www.linkedin.com/in/noam-baroukh-b40738300/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <div class="container">
+    <small class="muted">© <span id="year"></span> Noam Baroukh.</small>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const nav = document.querySelector('.navlinks');
+  navToggle.addEventListener('click', ()=>{
+    const open = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // Animate skill bars on view
+  const bars = document.querySelectorAll('.skill .bar > i');
+  const ioBars = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const el = e.target; const v = el.style.getPropertyValue('--v')||'0%';
+        el.animate([{width:'0%'},{width:v}],{duration:900,fill:'forwards',easing:'cubic-bezier(.2,.6,.2,1)'});
+        ioBars.unobserve(el);
+      }
+    })
+  },{threshold:.4});
+  bars.forEach(b=>ioBars.observe(b));
+
+  // Section reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const ioReveal = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('in');ioReveal.unobserve(e.target)}
+    })
+  },{threshold:.15});
+  reveals.forEach(el=>ioReveal.observe(el));
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
